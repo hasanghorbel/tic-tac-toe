@@ -69,7 +69,12 @@ def place(row, col, X_O) -> None:
         moves.remove((row, col))
         X_moves.add((row, col)) if X_O == X else O_moves.add((row, col))
     else:
-        place(int(input('row : ')), int(input('column : ')), X)
+        r = input('row : ')
+        c = input('column : ')
+        while r.isnumeric() == False or c.isnumeric() == False:
+            r = input('row : ')
+            c = input('column : ')
+        place(int(r), int(c), X)
         # AI is always right this condition if only for human
 
 
