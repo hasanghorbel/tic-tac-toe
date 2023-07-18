@@ -1,3 +1,6 @@
-# tic-tac-toe
-simple tic-tac-toe (with medium level ai)
-try beating it
+# Tic-Tac-Toe
+## Simple tic-tac-toe (with easy level ai)
+#### run command:
+```
+python main.py
+```
